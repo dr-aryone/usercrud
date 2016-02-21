@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h2>Log In</h2>
+
+    <br>
+
+    <form ng-submit="login.login(login.user)">
+      <fieldset class="form-group">
+        <label for="username">Username</label>
+        <input class="form-control" id="username" type="text" placeholder="username" ng-model="login.user.username">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" id="password" type="password" placeholder="password" ng-model="login.user.password">
+      </fieldset>
+
+      <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+  </div>
+</div>

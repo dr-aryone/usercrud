@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h2>Register</h2>
+
+    <br>
+
+    <form ng-submit="reg.register(reg.user)">
+      <fieldset class="form-group">
+        <label for="firstName">First Name</label>
+        <input id="firstName" class="form-control" type="text" placeholder="First Name" ng-model="reg.user.firstName">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" class="form-control" type="text" placeholder="Last Name" ng-model="reg.user.lastName">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="email">Email</label>
+        <input id="email" class="form-control" type="email" placeholder="email" ng-model="reg.user.email">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="username">Username</label>
+        <input id="username" class="form-control" type="text" placeholder="username" ng-model="reg.user.username">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="password">Password</label>
+        <input id="password" class="form-control" type="password" placeholder="password" ng-model="reg.user.password">
+      </fieldset>
+
+      <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+  </div>
+</div>

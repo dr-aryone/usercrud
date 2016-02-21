@@ -1,0 +1,20 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" ng-controller="NavbarCtrl as nav">
+  <a class="navbar-brand" href="#">
+    <strong>CRUD Auth</strong>
+  </a>
+
+  <ul class="nav navbar-nav pull-xs-right">
+    <li ng-if="nav.isLoggedIn()" class="nav-item">
+      <span class="nav-link"><em>Greetings, {{ nav.getUsername() }}!</em></span>
+    </li>
+    <li ng-show="nav.isLoggedIn()" class="nav-item active">
+      <a class="nav-link" ng-click="nav.logout()">Log Out</a>
+    </li>
+    <li ng-hide="nav.isLoggedIn()" class="nav-item">
+      <a class="nav-link" href="/#/register">Register</a>
+    </li>
+    <li ng-hide="nav.isLoggedIn()" class="nav-item">
+      <a class="nav-link" href="/#/login">Log In</a>
+    </li>
+  </ul>
+</nav>

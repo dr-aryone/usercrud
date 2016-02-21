@@ -1,0 +1,26 @@
+{
+  "name": "usercrud",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.5.0",
+    "bootstrap": "~4",
+    "jquery": "^2.2.0",
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "underscore": "^1.8.3",
+    "angular-mocks": "^1.5.0",
+    "angular-bootstrap": "^1.1.2",
+    "angular-ui-sortable": "^0.13.4"
+  }
+}

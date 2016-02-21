@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="writeAway">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sample CRUD with User Auth</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <% include partials/navbar %>
+
+  <div class="container">
+    <ng-view></ng-view>
+  </div>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services/authService.js"></script>
+  <script src="js/services/linkService.js"></script>
+  <script src="js/filters/user-links.js"></script>
+  <script src="js/controllers/NavbarCtrl.js"></script>
+  <script src="js/controllers/HomeCtrl.js"></script>
+  <script src="js/controllers/LinkFormCtrl.js"></script>
+  <script src="js/controllers/LoginCtrl.js"></script>
+  <script src="js/controllers/RegisterCtrl.js"></script>
+</body>
+</html>
